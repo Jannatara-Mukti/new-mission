@@ -1,0 +1,404 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* font-family: "Inria Sans", sans-serif; */
+/* font-family: "Merriweather", serif; */
+/* Common Styles  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+    padding: 50px 80px 0;
+} */
+
+.container{
+    margin: 50px 80px 0;
+    margin-bottom: 60px;
+}
+
+h1{
+    font-size: 53px;
+    font-family: "Inria Sans", sans-serif;
+    color: red;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 44px;
+    color: #fff;
+    line-height: 1.3em;
+    font-family: "Merriweather", serif;
+} 
+
+h3{
+    font-size: 23px;
+    font-weight: 700;
+    font-family: "Merriweather", serif;
+    margin: 15px 0;
+}
+
+h4{
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 14px;
+    font-family: "Merriweather", serif;
+}
+
+h5{
+    font-size: 16px;
+    color: red;
+    font-weight: 700;
+    font-family: "Inria Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+h6{
+    font-size: 12px;
+    font-family: "Inria Sans", sans-serif;
+}
+
+p{
+    font-size: 12px;
+    font-family: "Inria Sans", sans-serif;
+    margin: 20px 0;
+}
+
+.red{
+    color: red;
+}
+
+.black{
+    color: black;
+}
+/* Banner Style  */
+.banner{
+    padding: 100px;
+    background: linear-gradient(to bottom, rgb(7, 2, 17), rgba(7, 2, 17, 0)),url('../images/bannerImages.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .banner-text {
+    width: 600px;
+    text-align: center;
+}
+
+/* New Year  */
+.new-year{
+    text-align: center;
+}
+
+.new-year-img {
+    width: 580px;
+    margin: 0 auto;
+}
+.new-year-img img{
+    width: 100%;
+}
+
+/* midnight-party styling  */
+
+.midnight-party{
+    background: linear-gradient(to right, rgb(7, 2, 17), rgba(7, 2, 17, 0)), url('../images/Vectorrr.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -6px rgba(0, 0, 0, 0.216), -8px 6px rgba(0, 0, 0, 0.78);
+}
+
+.party-info h2{
+    width: 400px;
+}
+
+.midnight-party p{
+    width: 515px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.midnight-party button{
+    background: none;
+    outline: none;
+    border: none;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.party-img{
+    /* height: 180px; */
+    width: 230px;
+    padding: 30px 0;
+}
+
+.party-img img{
+    width: 100%;
+}
+
+/* Address Section Desing  */
+
+.address{
+    font-family: "Inria Sans", sans-serif;
+    text-align: center;
+    padding: 100px;
+    background: linear-gradient(rgba(255, 0, 0, 0.1), rgba(255, 0, 0, 0));
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btn-primary{
+    background-color: red;
+    color: #fff;
+    padding: 10px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* coming-soon design  */
+.coming-soon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.coming-soon h2, p {
+    color: black;
+}
+
+.coming-soon p {
+    font-size: 11px;
+    color: rgba(0, 0, 0, 0.636);
+}
+
+.clmn {
+    flex-grow: 1;
+    flex-basis: 0;    /* Ensure all columns start with an equal basis */
+    flex-shrink: 1;   /* Allow columns to shrink equally if needed */
+}
+
+.second {
+    padding: 20px;
+    border: 10px solid red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second img {
+    width: 100%;
+}
+
+
+/* Holiday Section */
+.holiday {
+    text-align: center;
+}
+
+.holiday-text {
+    text-align: center;
+}
+
+.holiday-text p {
+    width: 65%;
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 1.6;
+    text-align: justify;
+    text-align-last: center;
+    color: rgba(0, 0, 0, 0.715);
+}
+
+.hiloday-image-holder {
+    margin-top: 30px;
+}
+
+.hiloday-image-holder .image {
+    width: 50%;
+}
+
+.hiloday-image-holder .image .pic {
+    width: 100%;
+}
+
+.hiloday-image-holder .img-display {
+    display: flex;
+}
+
+.hiloday-image-holder .img-display .middle {
+    width: 20%;
+    position: relative;
+    top: 120px;
+    left: 80px;
+    z-index: 1;
+}
+
+.hiloday-image-holder .red-rectangle {
+    width: 100%;
+}
+
+.hiloday-image-holder .img-display .first {
+    position: relative;
+    top: 160px;
+}
+
+.hiloday-image-holder .img-display .third {
+    position: relative;
+    top: 4px;
+}
+
+
+/* Portfolio Section  */
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    flex: 1 1 250px;
+    padding: 0 20px 20px 0;
+}
+.photo img {
+    width: 100%;
+}
+
+.portfolio-text h3 {
+    margin: 10px 0;
+}
+
+.portfolio-text p{
+    margin-top: 0;
+    width: 50%;
+    color: rgba(0, 0, 0, 0.615);
+}
+
+
+/* Newsletter design  */
+.newsletter {
+    background-color: rgba(255, 0, 0, 0.05);
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.newsletter-img {
+    height: 80px;
+    width: 80px;
+}
+
+.newsletter-img img {
+    width: 100%;
+}
+
+.newsletter p {
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.715);
+    font-size: 10px;
+    line-height: 1.6;
+    width: 55%;
+}
+
+input {
+    /* display: inline-block; */
+    font-size: 10px;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    height: 37px;
+    width: 170px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type="text"]::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"] {
+    background-color: red;
+    height: 37px;
+    /* width: 170px; */
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 0 25px 25px 0;
+    color: #fff;
+}
+
+/* footer design  */
+.footer {
+    background-color: rgb(7, 2, 17);
+    padding: 60px 80px;
+}
+
+.footer p {
+    color: #fff;
+    margin: 6px 0 0;
+}
+
+.footer .online-address .fa {
+    color: #fff;
+    padding: 5px 5px 0;
+}
+
+.footer .online-address .fas {
+    color: #fff;
+    padding: 0 6px;
+}
+
+.footer .footer-address {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin: 20px 0;
+    border-color: rgba(255, 255, 255, 0.15);
+    border-width: 1px 0 0;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-icons .icon {
+    width: 30px;
+}
+
+.social-icons .icon img {
+    width: 100%;
+}
+
+.footer .rights {
+    display: flex;
+    justify-content: space-between;
+}
